@@ -23,7 +23,7 @@
 <div class="row">
 <ul>
 <li><a href="#">Contact us</a></li>
-<li><a href="#">oction detils</a></li>
+<li><a href="../about.php">oction detils</a></li>
 <li><a href="#">Privacy Policy</a></li>
 <li><a href="#">how to oction play</a></li>
 <li><a href="login/index.php">admin login</a></li>
