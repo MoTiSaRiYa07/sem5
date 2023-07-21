@@ -65,7 +65,7 @@
                 <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
                 <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
               </ul>
-              <a class="btn btn-success" href="login.php">BID NOW</a>
+              <a class="btn btn-success" href="loginc.php">BID NOW</a>
             </div>
           </div>
         </div>
@@ -89,7 +89,7 @@
                 <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
                 <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
               </ul>
-              <a class="btn btn-success" href="login.php">BID NOW</a>
+              <a class="btn btn-success" href="loginc.php">BID NOW</a>
             </div>
           </div>
         </div>
@@ -112,7 +112,7 @@
                 <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
                 <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
               </ul>
-              <a class="btn btn-success" href="login.php">BID NOW</a>
+              <a class="btn btn-success" href="loginc.php">BID NOW</a>
             </div>
           </div>
         </div>
@@ -138,7 +138,7 @@
                 <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
                 <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
               </ul>
-              <a class="btn btn-success" href="login.php">BID NOW</a>
+              <a class="btn btn-success" href="loginc.php">BID NOW</a>
             </div>
           </div>
         </div>
@@ -290,7 +290,7 @@
     </svg>
 </ul>
              <!-- <a class="btn btn-danger" href="login.php">BID NOW</a>-->
-             <a type="button" class="btn btn-warning">BID NOW</a>
+             <a type="button" class="btn btn-warning" href="loginc.php">BID NOW</a>
          </div>
           </div>
         </div>
@@ -329,7 +329,7 @@
   <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
     </svg>
  </ul>
- <a type="button" class="btn btn-warning">BID NOW</a>
+ <a type="button" class="btn btn-warning" href="loginc.php">BID NOW</a>
 
             </div>
           </div>
@@ -370,7 +370,7 @@
   <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
     </svg>
  </ul>
- <a type="button" class="btn btn-warning">BID NOW</a>
+ <a type="button" class="btn btn-warning" href="loginc.php">BID NOW</a>
 
             </div>
           </div>
@@ -411,7 +411,7 @@
   <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
     </svg>
  </ul>
- <a type="button" class="btn btn-warning">BID NOW</a>
+ <a type="button" class="btn btn-warning" href="loginc.php">BID NOW</a>
 
             </div>
           </div>
