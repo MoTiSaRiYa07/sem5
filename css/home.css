@@ -61,15 +61,15 @@ span {
  transform: rotateY(200deg) translateZ(430px); 
 }
 .carousel__face:nth-child(7) { 
-  background-image: url("https://images.pexels.com/photos/1415268/pexels-photo-1415268.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("../img/co7.jpeg");
  transform: rotateY(240deg) translateZ(430px); 
 }
 .carousel__face:nth-child(8) {
-  background-image: url("https://images.pexels.com/photos/135018/pexels-photo-135018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("../img/co8.jpeg");
   transform: rotateY(280deg) translateZ(430px); 
 }
 .carousel__face:nth-child(9) {
-  background-image: url("https://images.pexels.com/photos/1175135/pexels-photo-1175135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background-image: url("../img/co9.jpeg");
   transform: rotateY(320deg) translateZ(430px); 
 }
 
