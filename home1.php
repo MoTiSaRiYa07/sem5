@@ -50,7 +50,8 @@
     <div class="d-flex pb-5 mb-4">
       <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
         <div class="card rounded shadow-sm border-0">
-          <div class="card-body p-4">
+          <div class="card-body p-4" style="position: relative;">
+            <div class="btn btn-danger m-2" style="position: absolute; left: 7%;">0.00</div>
             <img src="img/1.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
             <h5>
               <p class="h11">FINE ART PAINTING</p>
