@@ -63,7 +63,7 @@
         <div class="blueBG">
         </div>
         <div class="responsive-container-block container">
-          <form class="form-box">
+          <form class="form-box" method="post">
             <div class="container-block form-wrapper">
               <p class="text-blk contactus-head">
                 Get in Touch
