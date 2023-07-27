@@ -14,15 +14,9 @@ body{
     
     .footer .row{
     width: 100%;
-    margin:1% 0%;
+    margin:2% 0%;
     padding:0.6% 0%;
-    color : green;
-    font-size: 15px;
-      transition:0.5s;
-    font-size: 25px;
-    text-align: center;
-     
-}
+    }
     
 .footer .row:hover{
     color: whitesmoke;
@@ -32,7 +26,7 @@ body{
     text-decoration:none;
     color : white;
     transition:0.5s;
-    font-size: 25px;
+    font-size: 40px;
 
     }
     
@@ -70,7 +64,7 @@ body{
     }
     }
     .icons ion-icon{
-        color: tomato;
+        color: aqua;
         font-size: 30px;
         padding-left: 14px;
         padding-top: 5px;
@@ -79,11 +73,11 @@ body{
     
      /* icon ni tuch effect*/
     .icons ion-icon:hover{
-        color: palevioletred;
+        color: white;
     }
 .rights-text
 {
-    color:lightyellow;
+    color:red;
     font-size: 40px;
     padding-left: 14px;
     padding-top: 5px;
@@ -94,7 +88,7 @@ body{
 }
 .rights-text:hover
 {
-    color: wheat;
+    color:darkseagreen;
 }
     
     

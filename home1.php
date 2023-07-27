@@ -7,8 +7,7 @@
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/fo.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 
