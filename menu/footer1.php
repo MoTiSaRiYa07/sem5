@@ -35,7 +35,7 @@
 <li><a href="about.php">oction detils</a></li>
 <li><a href="#">Privacy Policy</a></li>
 <li><a href="#">how to oction play</a></li>
-<li><a href="login/index.php">admin login</a></li>
+<li><a href="login.php">admin login</a></li>
 </ul>
 </div>
 <p class="rights-text"> created by ankushmotisariya & my project member</p>
