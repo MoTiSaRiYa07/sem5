@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-body {
+.reg_form {
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -14,6 +14,7 @@ body {
   padding: 20px;
   background: rgb(130, 106, 251);
 }
+
 .container {
   position: relative;
   max-width: 700px;

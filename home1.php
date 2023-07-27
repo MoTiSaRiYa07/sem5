@@ -6,7 +6,8 @@
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
   <link rel="stylesheet" href="css/nav.css">
   <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/footer1.css">
+  <link rel="stylesheet" href="css/fo.css">
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
@@ -420,7 +421,7 @@
       </div>
 </section>
   
-   <?php  include_once('menu/footer1.php') ?>
+   <?php  include_once('menu/footer.php') ?>
 
 
 

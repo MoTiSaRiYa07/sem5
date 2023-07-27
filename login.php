@@ -46,9 +46,12 @@
         <input type="submit" value="Login" name="submit" class="login-button"/>
         <p class="link">Don't have an account? <a href="registration.php">Registration Now</a></p>
   </form>
+
 <?php
     }
 ?>
+<?php include ("menu/footer.php"); ?>
+
 <!-- partial -->
 <script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
 <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>

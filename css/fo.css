@@ -70,7 +70,7 @@ body{
     }
     }
     .icons ion-icon{
-        color: aqua;
+        color: tomato;
         font-size: 30px;
         padding-left: 14px;
         padding-top: 5px;
@@ -83,11 +83,13 @@ body{
     }
 .rights-text
 {
-    color: red;
-    font-size: 30px;
+    color:lightyellow;
+    font-size: 40px;
     padding-left: 14px;
     padding-top: 5px;
     transition: 0.3s ease;
+   
+
  
 }
 .rights-text:hover
