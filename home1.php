@@ -419,9 +419,9 @@
         </div>
       </div>
 </section>
-  <section>
-    <?php  include_once('menu/footer.php') ?>
-  </section>
+  
+   <?php  include_once('menu/footer1.php') ?>
+
 
 
   <!-- partial navbarjs -->

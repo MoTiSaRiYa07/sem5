@@ -1,6 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/fo.css">
+</head>
+<body>
+    <footer>
 
-<footer>
-<div class="footer">
+    <div class="footer">
   <!-- 
 <div class="row">
 <a href="#"><i class="fa fa-facebook"></i></a>
@@ -30,5 +39,6 @@
 </ul>
 </div>
 <p class="rights-text"> created by ankushmotisariya & my project member</p>
-
 </footer>
+</body>
+</html>

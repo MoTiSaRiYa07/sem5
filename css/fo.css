@@ -6,7 +6,7 @@ body{
     }
     
     .footer{
-    background:#000;
+    background: black;
     padding:30px 0px;
     font-family: 'Play', sans-serif;
     text-align:center;
@@ -37,7 +37,7 @@ body{
     }
     
     .footer .row a:hover{
-    color: rebeccapurple;
+    color: rosybrown;
     }
     
     .footer .row ul{
@@ -70,7 +70,7 @@ body{
     }
     }
     .icons ion-icon{
-        color: cyan;
+        color: aqua;
         font-size: 30px;
         padding-left: 14px;
         padding-top: 5px;
