@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/regstionc.css">
 </head>
 <body>
+<?php include("menu/navbar.php"); ?>
+
 <?php
     require('db1.php');
     // When form submitted, insert values into the database.
@@ -180,9 +182,9 @@
 
       </form>
     </section>
-
-<?php
+    <?php
     }
-?>
+    ?>
+<?php  include_once('menu/footer1.php') ?>
 </body>
 </html>
