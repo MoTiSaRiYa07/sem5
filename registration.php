@@ -36,7 +36,7 @@
     } else {
 ?>
     <form class="form" action="" method="post">
-        <h1 class="login-title">Registration</h1>
+        <h1 class="login-title"> Admin Registration</h1>
         <input type="text" class="login-input1" name="username" placeholder="Username" required />
         <input type="text" class="login-input1" name="email" placeholder="Email Adress">
         <input type="password" class="login-input1" name="password" placeholder="Password">

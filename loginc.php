@@ -2,8 +2,16 @@
 <html>
 <head>
     <meta charset="utf-8"/>
-    <title>Login</title>
+    <title> Customer Login</title>
     <link rel="stylesheet" href="css/regstionc.css">
+
+    <style>
+      body{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+      }
+    </style>
 </head>
 <body>
 <?php
@@ -41,8 +49,8 @@
         <p class="link">Don't have an account? <a href="registration.php">Registration Now</a></p>
   </form>
     -->
-    <section class="container">
-      <header>Login</header>
+    <section class="container"  style="margin-top: 10%;">
+      <header> Customer Login</header>
       <form action="" class="form" method="post">
         <div class="input-box">
           <label>Full Name</label>

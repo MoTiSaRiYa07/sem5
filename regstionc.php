@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <title>Registration</title>
   <link rel="stylesheet" href="css/regstionc.css">
-  
+
 
 </head>
 
@@ -94,7 +94,7 @@
     }
   } else {
   ?>
-    <div class="reg_form" >
+    <div class="reg_form">
 
       <section class="container" style="margin-top: 5%;">
         <header> Customer Registration Form</header>
@@ -181,7 +181,7 @@
 
 
           <button>Submit</button>
-          <p class="link">Already have an account? <a href="loginc.php">Login here</a></p>
+          <!-- <p class="link">Already have an account? <a href="loginc.php">Login here</a></p> -->
 
         </form>
       </section>
@@ -190,7 +190,11 @@
   <?php
   }
   ?>
-  <?php include_once('menu/footer.php') ?>
+  <section>
+
+    <?php include_once('menu/footer.php') ?>
+  </section>
+
 </body>
 
 </html>
