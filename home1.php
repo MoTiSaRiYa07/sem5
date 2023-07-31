@@ -4,7 +4,7 @@
 <head>
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
-  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="../css/nov.css">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/fo.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,7 +24,7 @@
 </head>
 
 <body>
-  <?php include("menu/navbar.php"); ?>
+  <?php include('menu/navbar.php'); ?>
   <section style="height: 450px;">
     <div class="container1">
       <div class="carousel">

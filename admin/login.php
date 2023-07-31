@@ -60,10 +60,10 @@ header("location:index.php?page=home");
 
 -->
 
-<form class="form" method="post" name="login">
+<form class="form" method="post" name="login" id="login-form">
         <h1 class="login-title"> Admin LOGIN</h1>
-        <input type="text" class="login-input" name="username" placeholder="Username" autofocus="true"/>
-        <input type="password" class="login-input" name="password" placeholder="Password"/>
+        <input  type="text" id="username" class="login-input" name="username" placeholder="Username" autofocus="true"/>
+        <input type="password" id="password" class="login-input" name="password" placeholder="Password"/>
         <input type="submit" value="Login" name="submit" class="login-button"/>
   </form>
 
