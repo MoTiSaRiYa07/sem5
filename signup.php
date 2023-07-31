@@ -14,6 +14,10 @@
 			<textarea cols="30" rows="3" name="address" required="" class="form-control"></textarea>
 		</div>
 		<div class="form-group">
+			<label for="" class="control-label">City</label>
+			<input type="city" name="city" required="" class="form-control">
+	
+		<div class="form-group">
 			<label for="" class="control-label">Email</label>
 			<input type="email" name="email" required="" class="form-control">
 		</div>

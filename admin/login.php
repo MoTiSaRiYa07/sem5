@@ -16,12 +16,18 @@ ob_end_flush();
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link rel="stylesheet" href="../css/style1.css">
+  <link rel="stylesheet" href="../css/nov.css">
+  <link rel="stylesheet" href="../css/fo.css">
 
+
+  
 
   <title><?php echo $_SESSION['system']['name'] ?></title>
  	
 
-<?php include('./header.php'); ?>
+<?php // include('./header.php'); ?>
+<?php include('./menu1/navbar.php'); ?>
+
 <?php 
 if(isset($_SESSION['login_id']))
 header("location:index.php?page=home");
@@ -94,4 +100,11 @@ header("location:index.php?page=home");
 		})
 	})
 </script>	
+
+<script src='https://code.jquery.com/jquery-3.4.1.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js'></script>
+  <script src='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js'></script>
+  <script src="../js2/navscript.js"></script>
+  <?php include('./menu1/footer.php'); ?>
+
 </html>

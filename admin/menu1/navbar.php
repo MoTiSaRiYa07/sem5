@@ -17,13 +17,13 @@
         <i class="fas fa-bars text-white"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mr-4">
+            <ul class="navbar-nav ml-auto mr-5">
                 <div class="hori-selector"><div class="left"></div><div class="right"></div></div>
                 <li class="nav-item active">
-                    <a class="nav-link" href="main.php"></i>HOME</a>
+                    <a class="nav-link" href="../main.php"></i>HOME</a>
             
                 <li class="nav-item ">
-                    <a class="nav-link" href="index.php"></i>LATEST AUCTIONS</a>
+                    <a class="nav-link" href=""></i>LATEST AUCTIONS</a>
             
                 </li>
                 <li class="nav-item ">
@@ -35,8 +35,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href=""></i>CLOSED AUCTION</a>
                 </li>
-                <!--
-                <li class="nav-item">
+               <!-- <li class="nav-item">
                     <a class="nav-link" href="regstionc.php"></i>REGISTER</a>
                 </li>
                 <li class="nav-item ">

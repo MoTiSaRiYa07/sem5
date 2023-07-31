@@ -108,11 +108,12 @@ Class Action {
 		$data .= ", email = '$email' ";
 		$data .= ", contact = '$contact' ";
 		$data .= ", address = '$address' ";
-		$data .= ", password = '".md5($password)."' ";
+		$data .= ", city = '$city' ";
+       $data .= ", password = '".md5($password)."' ";
 		$chk = $this->db->query("SELECT * FROM users where username = '$username' ")->num_rows;
 		if($chk > 0){
 			return 2;
-			exit;
+		                exit;
 		}
 			$save = $this->db->query("INSERT INTO users set ".$data);
 		if($save){
