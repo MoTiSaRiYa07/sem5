@@ -23,7 +23,7 @@
                     <a class="nav-link" href="home1.php"></i>HOME</a>
             
                 <li class="nav-item ">
-                    <a class="nav-link" href=""></i>LATEST AUCTIONS</a>
+                    <a class="nav-link" href="index.php"></i>LATEST AUCTIONS</a>
             
                 </li>
                 <li class="nav-item ">
