@@ -15,7 +15,7 @@ ob_end_flush();
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style1.css">
 
 
   <title><?php echo $_SESSION['system']['name'] ?></title>
