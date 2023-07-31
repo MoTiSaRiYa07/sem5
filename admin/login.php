@@ -17,6 +17,7 @@ ob_end_flush();
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <link rel="stylesheet" href="../css/style.css">
 
+
   <title><?php echo $_SESSION['system']['name'] ?></title>
  	
 
@@ -32,7 +33,7 @@ header("location:index.php?page=home");
 <body>
 
 
-  <!--<main id="main" class=" bg-dark">
+ <!-- <main id="main" class=" bg-dark">
   		<div id="login-left">
   		</div>
 
@@ -61,12 +62,11 @@ header("location:index.php?page=home");
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 -->
 
-<form   id="login-form"  class="form" method="post" name="login">
+<form id="login-form" class="form" method="post" name="login">
         <h1 class="login-title"> Admin LOGIN</h1>
-        <input type="text" class="login-input" name="username" placeholder="Username" autofocus="true"/>
-        <input type="password" class="login-input" name="password" placeholder="Password"/>
+        <input type="text" class="login-input" name="username" placeholder="Username"  id="username autofocus="true"/>
+        <input type="password" class="login-input" name="password"  id="password "placeholder="Password"/>
         <input type="submit" value="Login" name="submit" class="login-button"/>
-       <!-- <p class="link">Don't have an account? <a href="registration.php">Registration Now</a></p>-->
   </form>
 
 
@@ -74,7 +74,7 @@ header("location:index.php?page=home");
 <script>
 	$('#login-form').submit(function(e){
 		e.preventDefault()
-		$('#login-form input[type="input"]').attr('disabled',true).html('Logging in...');
+		$('#login-form button[type="button"]').attr('disabled',true).html('Logging in...');
 		if($(this).find('.alert-danger').length > 0 )
 			$(this).find('.alert-danger').remove();
 		$.ajax({
@@ -91,7 +91,7 @@ header("location:index.php?page=home");
 					location.href ='index.php?page=home';
 				}else{
 					$('#login-form').prepend('<div class="alert alert-danger">Username or password is incorrect.</div>')
-					$('#login-form input[type="input"]').removeAttr('disabled').html('Login');
+					$('#login-form button[type="button"]').removeAttr('disabled').html('Login');
 				}
 			}
 		})
