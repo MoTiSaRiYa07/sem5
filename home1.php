@@ -4,7 +4,7 @@
 <head>
   <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css'>
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css'>
-  <link rel="stylesheet" href="../css/nov.css">
+  
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="css/fo.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -66,7 +66,7 @@
                 <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
                 <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
               </ul>
-              <a class="btn btn-success" href="loginc.php">BID NOW</a>
+              <a class="btn btn-success" href="signup.php">BID NOW</a>
             </div>
           </div>
         </div>
