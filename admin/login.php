@@ -30,10 +30,7 @@ header("location:index.php?page=home");
 
 </head>
 
-<body>
-
-
- <!-- <main id="main" class=" bg-dark">
+  <!--<main id="main" class=" bg-dark">
   		<div id="login-left">
   		</div>
 
@@ -60,15 +57,15 @@ header("location:index.php?page=home");
   </main>
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
 -->
 
-<form id="login-form" class="form" method="post" name="login">
+<form class="form" method="post" name="login">
         <h1 class="login-title"> Admin LOGIN</h1>
-        <input type="text" class="login-input" name="username" placeholder="Username"  id="username autofocus="true"/>
-        <input type="password" class="login-input" name="password"  id="password "placeholder="Password"/>
+        <input type="text" class="login-input" name="username" placeholder="Username" autofocus="true"/>
+        <input type="password" class="login-input" name="password" placeholder="Password"/>
         <input type="submit" value="Login" name="submit" class="login-button"/>
   </form>
-
 
 </body>
 <script>

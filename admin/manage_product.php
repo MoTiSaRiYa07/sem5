@@ -178,7 +178,7 @@ img#img_path-field{
 					<div class=" row form-group">
 						<div class="col-md-5">
 							<label for="" class="control-label">Product Image</label>
-							<input type="file" class="form-control" name="img" onchange="displayImg(this,$(this))">
+							<input type="file" class="form-control" name="img" onchange="displayImg2(this,$(this))">
 						</div>
 
 						<div class="col-md-5">
