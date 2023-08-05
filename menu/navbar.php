@@ -35,14 +35,13 @@
                 <li class="nav-item">
                     <a class="nav-link" href=""></i>CLOSED AUCTION</a>
                 </li>
-                <!--
+                
                 <li class="nav-item">
-                    <a class="nav-link" href="regstionc.php"></i>REGISTER</a>
+                    <a class="nav-link" href="signup.php"></i>REGISTER</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="loginc.php" ></i>LOGIN</a>
                 </li>
--->
             </ul>
         </div>
     </nav>

@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<title>Document</title>
+</head>
 <?php session_start() ?>
 <div class="container-fluid">
 	<form action="" id="signup-frm">
@@ -21,6 +30,12 @@
 			<label for="" class="control-label">Email</label>
 			<input type="email" name="email" required="" class="form-control">
 		</div>
+            
+		<div class="form-group">
+			<label for="" class="control-label">Email otp</label>
+			<input type="number" name="emailotp" required="" class="form-control">
+		</div>
+
 		<div class="form-group">
 			<label for="" class="control-label">Username</label>
 			<input type="text" name="username" required="" class="form-control">
@@ -40,6 +55,8 @@
 		display:none;
 	}
 </style>
+
+
 <script>
 	$('#signup-frm').submit(function(e){
 		e.preventDefault()

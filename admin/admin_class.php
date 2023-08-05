@@ -106,6 +106,7 @@ Class Action {
 		$data = " name = '$name' ";
 		$data .= ", username = '$username' ";
 		$data .= ", email = '$email' ";
+		$data .= ", emailotp = '$emailotp' ";
 		$data .= ", contact = '$contact' ";
 		$data .= ", address = '$address' ";
 		$data .= ", city = '$city' ";
@@ -113,7 +114,7 @@ Class Action {
 		$chk = $this->db->query("SELECT * FROM users where username = '$username' ")->num_rows;
 		if($chk > 0){
 			return 2;
-		                exit;
+		                exit();
 		}
 			$save = $this->db->query("INSERT INTO users set ".$data);
 		if($save){
