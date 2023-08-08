@@ -112,7 +112,8 @@ Class Action {
 		$data .= ", city = '$city' ";
        $data .= ", password = '".md5($password)."' ";
 		$chk = $this->db->query("SELECT * FROM users where username = '$username' ")->num_rows;
-		if($chk > 0){
+		if($chk > 0)
+		{
 			return 2;
 		                exit();
 		}

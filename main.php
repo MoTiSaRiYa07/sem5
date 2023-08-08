@@ -26,6 +26,8 @@
 </head>
 
 <body>
+<?php session_start() ?>
+
   <?php include('menu/navbar.php'); ?>
   <section style="height: 450px;">
     <div class="container1">
@@ -53,7 +55,7 @@
       <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
         <div class="card rounded shadow-sm border-0">
           <div class="card-body p-4" style="position: relative;">
-            <div class="btn btn-danger m-2" style="position: absolute; left: 7%;">0.00</div>
+            <!--div class="btn btn-danger m-2" style="position: absolute; left: 7%;">0.00</div-->
             <img src="img/1.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
             <h5>
               <p class="h11">FINE ART PAINTING</p>
@@ -68,7 +70,7 @@
                 <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
                 <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
               </ul>
-              <a class="btn btn-success">BID NOW</a>
+              <a class="btn btn-success" href="index.php">BID NOW</a>
             </div>
           </div>
         </div>
@@ -92,7 +94,7 @@
                 <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
                 <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
               </ul>
-              <a class="btn btn-success">BID NOW</a>
+              <a class="btn btn-success" href="index.php">BID NOW</a>
             </div>
           </div>
         </div>
@@ -115,7 +117,7 @@
                 <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
                 <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
               </ul>
-              <a class="btn btn-success">BID NOW</a>
+              <a class="btn btn-success" href="index.php">BID NOW</a>
             </div>
           </div>
         </div>
@@ -141,7 +143,7 @@
                 <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
                 <li class="list-inline-item m-0"><i class="fa fa-star text-success"></i></li>
               </ul>
-              <a class="btn btn-success">BID NOW</a>
+              <a class="btn btn-success" href="index.php">BID NOW</a>
             </div>
           </div>
         </div>

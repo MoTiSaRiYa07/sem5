@@ -26,7 +26,7 @@ ob_end_flush();
  	
 
 <?php // include('./header.php'); ?>
-<?php include('./menu1/navbar.php'); ?>
+<?php include('../menu/navbar.php'); ?>
 
 <?php 
 if(isset($_SESSION['login_id']))

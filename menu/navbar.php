@@ -12,7 +12,7 @@
 <body>
     
 <nav class="navbar navbar-expand-custom navbar-mainbg navbar-stick">
-        <a class="navbar-brand navbar-logo" >PAINTING AUCTION SYSTEM</a>
+ <nav class="navbar-brand navbar-logo" >PAINTING AUCTION SYSTEM</nav>
         <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars text-white"></i>
         </button>
@@ -35,13 +35,14 @@
                 <li class="nav-item">
                     <a class="nav-link" href=""></i>CLOSED AUCTION</a>
                 </li>
-                
+                <!--
                 <li class="nav-item">
                     <a class="nav-link" href="signup.php"></i>REGISTER</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" href="loginc.php" ></i>LOGIN</a>
                 </li>
+-->
             </ul>
         </div>
     </nav>

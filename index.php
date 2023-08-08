@@ -11,6 +11,7 @@
             $_SESSION['system'][$key] = $value;
         }
     ob_end_flush();
+    
     include('header.php');
     // include('menu/navbar.php'); 
 
