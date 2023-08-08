@@ -8,6 +8,15 @@ if($action == 'login'){
 	if($login)
 		echo $login;
 }
+
+if($action == 'slogin'){
+	$login = $crud->slogin();
+	if($login)
+		echo $login;
+}
+
+
+
 if($action == 'login2'){
 	$login = $crud->login2();
 	if($login)
@@ -15,6 +24,11 @@ if($action == 'login2'){
 }
 if($action == 'logout'){
 	$logout = $crud->logout();
+	if($logout)
+		echo $logout;
+}
+if($action == 'slogout'){
+	$logout = $crud->slogout();
 	if($logout)
 		echo $logout;
 }

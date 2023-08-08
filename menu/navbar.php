@@ -35,11 +35,11 @@
                 <li class="nav-item">
                     <a class="nav-link" href=""></i>CLOSED AUCTION</a>
                 </li>
-                <!--
+                
                 <li class="nav-item">
-                    <a class="nav-link" href="signup.php"></i>REGISTER</a>
+                    <a class="nav-link" href="admin/index1.php"></i>SELLER LOGIN</a>
                 </li>
-                <li class="nav-item ">
+                <!--li class="nav-item ">
                     <a class="nav-link" href="loginc.php" ></i>LOGIN</a>
                 </li>
 -->

@@ -26,11 +26,11 @@ ob_end_flush();
  	
 
 <?php // include('./header.php'); ?>
-<?php include('./menu1/navbar.php'); ?>
+<?php include("./menu1/navbar.php"); ?>
 
 <?php 
-if(isset($_SESSION['login_id']))
-header("location:index.php?page=home");
+if(isset($_SESSION['slogin_id']))
+header("location:index1.php?page=home1");
 
 ?>
 
@@ -66,8 +66,8 @@ header("location:index.php?page=home");
 
 -->
 
-<form class="form" method="post" name="login" id="login-form">
-        <h1 class="login-title"> Admin LOGIN</h1>
+<form class="form" method="post" name="loginc" id="login-form">
+        <h1 class="login-title"> seller LOGIN</h1>
         <input  type="text" id="username" class="login-input" name="username" placeholder="Username" autofocus="true"/>
         <input type="password" id="password" class="login-input" name="password" placeholder="Password"/>
         <input type="submit" value="Login" name="submit" class="login-button"/>
@@ -81,20 +81,20 @@ header("location:index.php?page=home");
 		if($(this).find('.alert-danger').length > 0 )
 			$(this).find('.alert-danger').remove();
 		$.ajax({
-			url:'ajax.php?action=login',
+			url:'ajax.php?action=slogin',
 			method:'POST',
 			data:$(this).serialize(),
 			error:err=>{
 				console.log(err)
-		$('#login-form button[type="button"]').removeAttr('disabled').html('Login');
+		$('#login-form button[type="button"]').removeAttr('disabled').html('Login1');
 
 			},
 			success:function(resp){
 				if(resp == 1){
-					location.href ='index.php?page=home';
+					location.href ='index1.php?page=home1';
 				}else{
 					$('#login-form').prepend('<div class="alert alert-danger">Username or password is incorrect.</div>')
-					$('#login-form button[type="button"]').removeAttr('disabled').html('Login');
+					$('#login-form button[type="button"]').removeAttr('disabled').html('Login1');
 				}
 			}
 		})

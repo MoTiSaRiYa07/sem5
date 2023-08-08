@@ -43,6 +43,8 @@
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">how to Auction play</a></li>
                     <li><a href="admin/index.php">admin login</a></li>
+                    
+
                 </ul>
             </div>
             <p class="rights-text" style="font-family: 'Great Vibes', cursive;"> created by ankushmotisariya & my project member</p>

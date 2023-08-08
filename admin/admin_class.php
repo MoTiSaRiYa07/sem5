@@ -36,6 +36,28 @@ Class Action {
 				return 3;
 			}
 	}
+
+	function slogin(){
+		
+		extract($_POST);		
+		$qry = $this->db->query("SELECT * FROM users where username = '".$username."' and password = '".md5($password)."' ");
+		if($qry->num_rows > 0){
+			foreach ($qry->fetch_array() as $key => $value) {
+				if($key != 'passwors' && !is_numeric($key))
+					$_SESSION['slogin_'.$key] = $value;
+			}
+			if($_SESSION['slogin_type'] != 3){
+				foreach ($_SESSION as $key => $value) {
+					unset($_SESSION[$key]);
+				}
+				return 2 ;
+			}
+				return 1;
+		}else{
+			return 3;
+		}
+}
+
 	function login2(){
 		
 			extract($_POST);		
@@ -63,6 +85,13 @@ Class Action {
 			unset($_SESSION[$key]);
 		}
 		header("location:login.php");
+	}
+	function slogout(){
+		session_destroy();
+		foreach ($_SESSION as $key => $value) {
+			unset($_SESSION[$key]);
+		}
+		header("location:login1.php");
 	}
 	function logout2(){
 		session_destroy();
@@ -123,7 +152,10 @@ Class Action {
 				if($login)
 				return $login;
 		}
-	}
+	}  
+	
+	
+	
 	function update_account(){
 		extract($_POST);
 		$data = " name = '".$firstname.' '.$lastname."' ";
