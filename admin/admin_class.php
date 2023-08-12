@@ -136,7 +136,8 @@ Class Action {
 		$data .= ", username = '$username' ";
 		$data .= ", email = '$email' ";
 		$data .= ", emailotp = '$emailotp' ";
-		$data .= ", contact = '$contact' ";
+		$data .= ", type = '$type' ";	
+        $data .= ", contact = '$contact' ";
 		$data .= ", address = '$address' ";
 		$data .= ", city = '$city' ";
        $data .= ", password = '".md5($password)."' ";

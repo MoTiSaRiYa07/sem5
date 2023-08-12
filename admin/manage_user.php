@@ -28,14 +28,14 @@ foreach($user->fetch_array() as $k =>$v){
 			<small><i>Leave this blank if you dont want to change the password.</i></small>
 		<?php endif; ?>
 		</div>
-		<?php if(isset($meta['type']) && $meta['type'] == 3): ?>
-			<input type="hidden" name="type" value="3">
+		<?php if(isset($meta['type']) && $meta['type'] == 4): ?>
+			<input type="hidden" name="type" value="4">
 		<?php else: ?>
 		<?php if(!isset($_GET['mtype'])): ?>
 		<div class="form-group">
 			<label for="type">User Type</label>
 			<select name="type" id="type" class="custom-select">
-			<option value="0" <?php echo isset($meta['type']) && $meta['type'] == 1 ? 'selected': '' ?>></option>
+			<option value="0" <?php echo isset($meta['type']) && $meta['type'] == 0 ? 'selected': '' ?>></option>
           <option value="1" <?php echo isset($meta['type']) && $meta['type'] == 1 ? 'selected': '' ?>>Admin</option>
 				<option value="2" <?php echo isset($meta['type']) && $meta['type'] == 2 ? 'selected': '' ?>>customer</option>
 				<option value="3" <?php echo isset($meta['type']) && $meta['type'] == 3 ? 'selected': '' ?>>seller</option>

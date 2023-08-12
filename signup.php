@@ -38,6 +38,22 @@
 			<input type="number" name="emailotp" required="" class="form-control">
 		</div>
 
+		  <?//php if(isset($meta['type']) && $meta['type'] == 4): ?>
+		  <//input type="hidden" name="type" value="4">
+		<?//php else: ?>
+		<?php //if(!isset($_GET['type'])): ?>
+		<div class="form-group">
+			<label for="type">User Type</label>
+			<select name="type" id="type" class="custom-select"  required="" class="from-control">
+			<option value="0" <?php echo isset($meta['type']) && $meta['type'] == 0 ? 'selected': '' ?>></option>
+				<option value="2" <?php echo isset($meta['type']) && $meta['type'] == 2 ? 'selected': '' ?>>customer</option>
+				<option value="3" <?php echo isset($meta['type']) && $meta['type'] == 3 ? 'selected': '' ?>>seller</option>
+			
+			</select>
+		</div>
+		<?//php endif; ?>
+		<?//php endif; ?>
+		
 		<div class="form-group">
 			<label for="" class="control-label">Username</label>
 			<input type="text" name="username" required="" class="form-control">

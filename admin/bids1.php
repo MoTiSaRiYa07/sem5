@@ -73,8 +73,6 @@
 									</td>
 									<td>
 										<button class="btn btn-primary btn-sm view_user" type="button" data-id ='<?php echo $row['user_id'] ?>'>View Buyer Details</button>
-										<button class="btn btn-success btn-sm view_user" type="button" data-id ='<?php echo $row['user_id'] ?>'>View payment Details</button>
-
 									</td>
 								</tr>
 								<?php endwhile; ?>
