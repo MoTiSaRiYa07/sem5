@@ -1,0 +1,17 @@
+{
+    "name": "ankus/oction",
+    "autoload": {
+        "psr-4": {
+            "Ankus\\Oction\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MoTiSaRiYa07",
+            "email": "ankushmotisariya@gmail.com"
+        }
+    ],
+    "require": {
+            "phpmailer/phpmailer": "^6.8"
+    }
+}
