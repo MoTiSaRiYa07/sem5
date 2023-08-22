@@ -33,6 +33,9 @@
 				<label for="" class="control-label">Email</label>
 				<input type="email" name="email" required="" class="form-control" id="email">
 				<button class="btn btn-primary mt-3 mail-otp-send">Send OTP</button>
+				<span class="mail-sent-msg mt-3" style="color: green;"> 
+				Mail send successfully !
+				</span>
 			</div>
 
 			<div class="form-group">
@@ -82,7 +85,7 @@
 </style>
 
 <script>
-	$('#signup-frm').submit(function(e) {
+		$('#signup-frm').submit(function(e) {
 		e.preventDefault()
 		start_load()
 		if ($(this).find('.alert-danger').length > 0)
@@ -107,8 +110,9 @@
 		})
 	})
 
-
+	$('.mail-sent-msg').hide()
 	$(document).on('click', '.mail-otp-send', function() {
+		$('.mail-otp-send').prop( "disabled", true )
 		console.log('Started');
 		var email = $('#email').val();
 		console.log(email);
@@ -119,7 +123,8 @@
 				email: email
 			},
 			success: function(res) {
-
+				$('.mail-sent-msg').show()
+				$('.mail-otp-send').hide()
 			}
 
 		});
