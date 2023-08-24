@@ -27,7 +27,7 @@
 -->
             <div class="icons">
                 <a href="https://www.facebook.com/"><ion-icon name="logo-facebook"></ion-icon></a>
-                <a href="https://www.instagram.com/accounts/login/"><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href="https://www.instagram.com/ll_.ankush_.motisariya._ll/"><ion-icon name="logo-instagram"></ion-icon></a>
                 <a href="https://www.youtube.com/"><ion-icon name="logo-youtube"></ion-icon></a>
                 <a href="https://www.google.com/"><ion-icon name="logo-google"></ion-icon></a>
                 <a href="https://web.whatsapp.com/"><ion-icon name="logo-whatsapp"></ion-icon></a>
