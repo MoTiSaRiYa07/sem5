@@ -132,6 +132,25 @@ Class Action {
 	}
 	function signup(){
 		extract($_POST);
+		$chk=$this->db->query("SELECT * FROM otps where email = '$email' ")->num_rows;
+		
+		
+		if($chk >0)
+		{
+			if($emailotp!=$_SESSION['otp'])
+			{
+				//Special code for invalid otp
+				return 11;
+			}
+			
+
+		}
+		else
+		{
+			//special code for otp not found
+			return 12;
+		}
+
 		$data = " name = '$name' ";
 		$data .= ", username = '$username' ";
 		$data .= ", email = '$email' ";
@@ -154,6 +173,8 @@ Class Action {
 				return $login;
 		}
 	}  
+	
+
 	
 	
 	

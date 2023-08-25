@@ -43,6 +43,8 @@
 				<input type="number" name="emailotp" required="" class="form-control">
 			</div>
 
+			
+
 			<? //php if(isset($meta['type']) && $meta['type'] == 4): 
 			?>
 			</ /input type="hidden" name="type" value="4">
@@ -85,7 +87,9 @@
 </style>
 
 <script>
+		
 		$('#signup-frm').submit(function(e) {
+			
 		e.preventDefault()
 		start_load()
 		if ($(this).find('.alert-danger').length > 0)
@@ -100,15 +104,34 @@
 
 			},
 			success: function(resp) {
+				console.log("Response is ",resp);
 				if (resp == 1) {
 					location.reload();
-				} else {
+				} else if(resp ==11){
+
+					$('#signup-frm').prepend('<div class="alert alert-danger">Invalid OTP</div>')
+					end_load();
+				}
+				else if(resp ==12){
+					$('#signup-frm').prepend('<div class="alert alert-danger">Invalid Request</div>')
+				}
+				
+				else {
 					$('#signup-frm').prepend('<div class="alert alert-danger">Email already exist.</div>')
 					end_load()
 				}
 			}
 		})
 	})
+	
+	function end_load(){
+		let loader=document.getElementById("preloader2");
+		if(loader)
+		{
+
+			loader.style.display='none';
+		}
+	}
 
 	$('.mail-sent-msg').hide()
 	$(document).on('click', '.mail-otp-send', function() {

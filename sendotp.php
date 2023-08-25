@@ -20,6 +20,7 @@ $email = $_POST["email"];
 
 
 
+
   $mail->addAddress($to);           // Add a recipient
   // $mail->addAddress('receiver2@gfg.com', 'Name');   // Name is optional
   $mail->isHTML(true);
@@ -31,6 +32,8 @@ $email = $_POST["email"];
 
   $user_mail = $to ;
 try {
+    // save OTP in session
+    $_SESSION['otp']=$otp;
     $qry = "DELETE FROM otps WHERE email = '$user_mail'";
     mysqli_query($conn, $qry);
 
