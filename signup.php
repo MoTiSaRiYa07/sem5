@@ -15,15 +15,15 @@
 	<form action="" id="signup-frm">
 		<div class="form-group">
 			<label for="" class="control-label">Name</label>
-			<input type="text" name="name" required="" class="form-control">
+			<input type="text" name="name"  required=""  class="form-control"  pattern="[a-zA-Z ]{1,}>
 		</div>
 		<div class="form-group">
 			<label for="" class="control-label">Contact</label>
-			<input type="text" name="contact" required="" class="form-control">
+			<input type="text" name="contact" required="" class="form-control" pattern="[0-9]{10,10}">
 		</div>
 		<div class="form-group">
 			<label for="" class="control-label">Address</label>
-			<textarea cols="30" rows="3" name="address" required="" class="form-control"></textarea>
+			<textarea cols="30" rows="3" name="address" required="" class="form-control" pattern="[a-zA-Z0-9 ]{7,}"></textarea>
 		</div>
 		<div class="form-group">
 			<label for="" class="control-label">City</label>
@@ -31,7 +31,7 @@
 
 			<div class="form-group">
 				<label for="" class="control-label">Email</label>
-				<input type="email" name="email" required="" class="form-control" id="email">
+				<input type="email" name="email" required=""   pattern="[_a-z0-9-+]+(\.[_a-z0-9-+]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})" class="form-control" id="email">
 				<button class="btn btn-primary mt-3 mail-otp-send">Send OTP</button>
 				<span class="mail-sent-msg mt-3" style="color: green;"> 
 				Mail send successfully !
