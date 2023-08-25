@@ -67,7 +67,7 @@ header("location:index1.php?page=home1");
 -->
 
 <form class="form" method="post" name="loginc" id="login-form">
-        <h1 class="login-title"> seller LOGIN</h1>
+        <h1 class="login-title">SELLER LOGIN</h1>
         <input  type="text" id="username" class="login-input" name="username" placeholder="Username" autofocus="true"/>
         <input type="password" id="password" class="login-input" name="password" placeholder="Password"/>
         <input type="submit" value="Login" name="submit" class="login-button"/>
