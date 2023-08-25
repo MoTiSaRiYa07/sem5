@@ -15,7 +15,7 @@
 	<form action="" id="signup-frm">
 		<div class="form-group">
 			<label for="" class="control-label">Name</label>
-			<input type="text" name="name"  required=""  class="form-control"  pattern="[a-zA-Z ]{1,}>
+			<input type="text" name="name"  required=""  class="form-control">
 		</div>
 		<div class="form-group">
 			<label for="" class="control-label">Contact</label>
