@@ -73,7 +73,7 @@ header("location:index.php?page=home");
         <input type="submit" value="Login" name="submit" class="login-button"/>
   </form>
 
-</body>
+  </body>
 <script>
 	$('#login-form').submit(function(e){
 		e.preventDefault()

@@ -12,7 +12,7 @@
 <body>
     
 <nav class="navbar navbar-expand-custom navbar-mainbg navbar-stick">
-        <a class="navbar-brand navbar-logo" >PAINTING AUCTION SYSTEM</a>
+        <l class="navbar-brand navbar-logo" >PAINTING AUCTION SYSTEM</l>
         <button class="navbar-toggler" type="button" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <i class="fas fa-bars text-white"></i>
         </button>

@@ -1,5 +1,6 @@
 <?php session_start() ?>
 <div class="container-fluid">
+	
 	<form action="" id="login-frm">
 		<div class="form-group">
 			<label for="" class="control-label">Username</label>
@@ -14,6 +15,8 @@
 		<button class="button btn btn-primary btn-sm">Login</button>
 		<button class="button btn btn-secondary btn-sm" type="button" data-dismiss="modal">Cancel</button>
 	</form>
+
+
 </div>
 
 <style>
