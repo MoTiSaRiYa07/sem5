@@ -15,23 +15,23 @@
 	<form action="" id="signup-frm">
 		<div class="form-group">
 			<label for="" class="control-label">Name</label>
-			<input type="text" name="name"  required=""  class="form-control">
+			<input type="text" name="name"  required="" placeholder="Enter name " class="form-control">
 		</div>
 		<div class="form-group">
 			<label for="" class="control-label">Contact</label>
-			<input type="text" name="contact" required="" class="form-control" pattern="[0-9]{10,10}">
+			<input type="text" name="contact" required="" class="form-control" placeholder="Enter contat 10 digit" pattern="[0-9]{10,10}">
 		</div>
 		<div class="form-group">
 			<label for="" class="control-label">Address</label>
-			<textarea cols="30" rows="3" name="address" required="" class="form-control" pattern="[a-zA-Z0-9 ]{7,}"></textarea>
+			<textarea cols="30" rows="3" name="address" required="" class="form-control" placeholder="Enter address" pattern="[a-zA-Z0-9 ]{7,}"></textarea>
 		</div>
 		<div class="form-group">
 			<label for="" class="control-label">City</label>
-			<input type="city" name="city" required="" class="form-control">
+			<input type="city" name="city" placeholder="Enter city only surat" required="" class="form-control">
 
 			<div class="form-group">
 				<label for="" class="control-label">Email</label>
-				<input type="email" name="email" required=""   pattern="[_a-z0-9-+]+(\.[_a-z0-9-+]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})" class="form-control" id="email">
+				<input type="email" name="email"  placeholder="Enter email fromate:: yourname@gmail.com::" required=""   pattern="[_a-z0-9-+]+(\.[_a-z0-9-+]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})" class="form-control" id="email">
 				<button class="btn btn-primary mt-3 mail-otp-send">Send OTP</button>
 				<span class="mail-sent-msg mt-3" style="color: green;"> 
 				Mail send successfully !
@@ -40,38 +40,24 @@
 
 			<div class="form-group">
 				<label for="" class="control-label">Email otp</label>
-				<input type="number" name="emailotp" required="" class="form-control">
+				<input type="number" name="emailotp"  placeholder="Enter otp please check mail and vaild otp " required="" class="form-control">
 			</div>
-
-			
-
-			<? //php if(isset($meta['type']) && $meta['type'] == 4): 
-			?>
-			</ /input type="hidden" name="type" value="4">
-			<? //php else: 
-			?>
-			<?php //if(!isset($_GET['type'])): 
-			?>
-			<div class="form-group">
+           <div class="form-group">
 				<label for="type">User Type</label>
-				<select name="type" id="type" class="custom-select" required="" class="from-control">
+				<select name="type" id="type" class="custom-select" placeholder="Enter type" required="" class="from-control">
 					<option value="2" <?php echo isset($meta['type']) && $meta['type'] == 2 ? 'selected' : '' ?>>customer</option>
 					<option value="3" <?php echo isset($meta['type']) && $meta['type'] == 3 ? 'selected' : '' ?>>seller</option>
 
 				</select>
 			</div>
-			<? //php endif; 
-			?>
-			<? //php endif; 
-			?>
-
+			
 			<div class="form-group">
 				<label for="" class="control-label">Username</label>
-				<input type="text" name="username" required="" class="form-control">
+				<input type="text" name="username" placeholder="Enter user name" required="" class="form-control">
 			</div>
 			<div class="form-group">
 				<label for="" class="control-label">Password</label>
-				<input type="password" name="password" required="" class="form-control">
+				<input type="password" name="password"  placeholder="Enter password" required="" class="form-control">
 			</div>
 
 			<button class="button btn btn-primary btn-sm">Create</button>
