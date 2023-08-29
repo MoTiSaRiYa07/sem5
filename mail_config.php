@@ -17,8 +17,6 @@ try {
     $mail->Username = 'kingofembroidery@gmail.com'; // enter your mail address
     $mail->Password = 'nhucdvtnfsemscnv';   // enter your email password
   $mail->setFrom('kingofembroidery@gmail.com', 'KING OF EMBROIDERY'); // Set sender of the mail
-
-    // $mail->Port       = 587;
 } catch (Exception $e) {
     $e->getMessage();
 }
