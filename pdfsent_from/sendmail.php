@@ -15,21 +15,18 @@ $message = $_POST['message'];
 
     try {
        
-        $mail->SMTPDebug = SMTP::DEBUG_SERVER;                      
-        $mail->isSMTP();                                            
-        $mail->Host       = 'smtp.gmail.com';                    
-        $mail->SMTPAuth   = true;                                 
-        $mail->Username   = 'kingofembroidery@gmail.com';                     
-        $mail->Password   = 'nhucdvtnfsemscnv';                             
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;          
-        $mail->Port       = 587;                                     
-    
+        $mail->isSMTP();
+    $mail->SMTPDebug = 0;
+    $mail->SMTPSecure = 'tls';
+    $mail->SMTPAuth = true;
+    $mail->Port = 587;
+    $mail->Host = 'smtp.gmail.com';
+    $mail->Username = 'kingofembroidery@gmail.com'; // enter your mail address
+    $mail->Password = 'nhucdvtnfsemscnv';   // enter your email password
+     $mail->setFrom('kingofembroidery@gmail.com', 'KING OF EMBROIDERY'); // Set sender of the mail
+    $mail->addAddress($email);               
         
-        $mail->setFrom('kingofembroidery@gmail.com', 'KING OF EMBROIDERY');
-           
-        $mail->addAddress($email);               
-        
-        if($_FILES['attachment']['name']!=null){
+    if($_FILES['attachment']['name']!=null){
             if(move_uploaded_file($_FILES['attachment']['tmp_name'],"uploads/{$_FILES['attachment']['name']}")){
         $mail->addAttachment("uploads/{$_FILES['attachment']['name']}");    
 
