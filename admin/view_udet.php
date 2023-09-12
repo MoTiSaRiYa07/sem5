@@ -46,7 +46,7 @@ foreach($qry->fetch_array() as $k => $val){
 	<div class="row">
 		<div class="col-lg-12">
 			<button class="btn float-right btn-secondary" type="button" data-dismiss="modal">Close</button>
-			<a class="btn float-left btn-success" type="button" href="">pyment<a>
+			<a class="btn float-left btn-success" type="button" href="../pdfsent_from/index.php">pyment<a>
 
 		</div>
 	</div>

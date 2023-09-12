@@ -13,6 +13,7 @@
         <form method="post" action="sendmail.php" enctype="multipart/form-data">
             <input type="email" name="email" class="input" placeholder="Email Id" required>
             <input type="text" name="subject" class="input" placeholder="Subject" required>
+            <input type="number" name="pyment" class="input" placeholder="pyment" required>
 
             <textarea class="input" name="message" placeholder="Message" required></textarea>
             <input type="file" name="attachment" class="up">
