@@ -63,7 +63,8 @@
 										<span class="badge badge-success">Wins in Bidding</span>
 										<?php else: ?>
 										<span class="badge badge-secondary">Loose in Bidding</span>
-										<?php endif; ?>
+										
+							              <?php endif; ?>
 										<?php endif; ?>
 										<?php elseif($row['status'] == 2): ?>
 										<span class="badge badge-primary">Confirmed</span>
@@ -73,7 +74,10 @@
 									</td>
 									<td>
 										<button class="btn btn-primary btn-sm view_user" type="button" data-id ='<?php echo $row['user_id'] ?>'>View Buyer Details</button>
+										<?php if($uid == $row['user_id']): ?>
 										<button class="btn btn-success btn-sm view_user" type="button" data-id ='<?php echo $row['user_id'] ?>'>View payment Details</button>
+										<button class="btn btn-warning btn-sm view_user" type="button" data-id ='<?php echo $row['user_id'] ?>'>Genrate pdf</button>
+											<?php endif; ?>
 
 									</td>
 								</tr>
