@@ -76,7 +76,7 @@
 										<button class="btn btn-primary btn-sm view_user" type="button" data-id ='<?php echo $row['user_id'] ?>'>View Buyer Details</button>
 										<?php if($uid == $row['user_id']): ?>
 										<button class="btn btn-success btn-sm view_user" type="button" data-id ='<?php echo $row['user_id'] ?>'>View payment Details</button>
-										<button class="btn btn-warning btn-sm view_user" type="button" data-id ='<?php echo $row['user_id'] ?>'>Genrate pdf</button>
+										<a href="gen_pdf.php?id=<?php echo $row['id'] ?>" class="btn btn-warning btn-sm gen_pdf_btn" data-id ='<?php echo $row['user_id'] ?>'>Genrate pdf</a>
 											<?php endif; ?>
 
 									</td>
@@ -109,7 +109,8 @@
 	$(document).ready(function(){
 		$('table').dataTable()
 	})
-	
+
+
 	$('.view_user').click(function(){
 		uni_modal("<i class'fa fa-card-id'></i> Buyer Details","view_udet.php?id="+$(this).attr('data-id'))
 		
