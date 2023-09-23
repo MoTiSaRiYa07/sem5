@@ -24,9 +24,14 @@ $user = mysqli_fetch_array($run);
 
 $id = $data['id'];
 $name = $user['name'];
+$email = $user['email'];
 $pname = $product['name'];
 $amt = $data['bid_amount'];
-$img = $product['img_fname'];
+// $img = $product['img_fname'];
+
+
+
+
 
 // send a pdf
 // HTML content
@@ -35,6 +40,7 @@ $html = "
 <html>
 <head>
     <title>Bid Winning</title>
+   
     <style>
 
            table {
@@ -45,29 +51,31 @@ $html = "
            }
            table
            {
-            border: 1px solid rgba(0,0,0,0.6);
+            // border: 1px solid rgba(0,0,0,0.6);
             text-align: center;
             color: black;
             border-collapse: collapse;
            }
            tr
            {
-            border: 1px solid rgba(0,0,0,0.6);
+            border: 3px dark srgba(0,0,0,0.6);
             text-align: center;
             color: black;
            }
             </style>
+         
 </head>
 <body>
-      <h1> NAME WIN AUCTION  $name </h1>
-<table>
+      <h1>  WIN AUCTION DETAILS</h1>
+<table border='1'>
 <thead>
+
 								<tr>
-									<th >#</th>
+									<th >Id</th>
 									<th >Name</th>
+                                    <th >Email</th>
 									<th >Product</th>
 									<th >Amount</th>
-                                    <th >img</th>
 								</tr>
 							</thead>
                             <tbody>
@@ -75,20 +83,17 @@ $html = "
                                       
                                     <td>$id</td>
                                     <td>$name</td>
+                                    <td>$email</td>
                                     <td>$pname</td>
                                     <td>$amt</td>
-                                    <td>$img</td>
                                 </tr>
                             </tbody>
-</table>    
-
-
-
-           
+</table>         
 </body>
                    
 </html>
 ";
+
 
 $dompdf->loadHtml($html);
 
@@ -100,3 +105,6 @@ $dompdf->render();
 
 // Output the generated PDF (inline)
 $dompdf->stream();
+?>
+<img src='<?php echo $img_path ?>' >
+
