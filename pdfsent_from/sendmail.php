@@ -12,7 +12,7 @@ print_r($_FILES);
 $email = $_POST['email'];
 $subject = $_POST['subject'];
 $message = $_POST['message'];
-$pyment = $_POST['pyment'];
+// $pyment = $_POST['pyment'];
 
     try {
        
@@ -37,7 +37,7 @@ $pyment = $_POST['pyment'];
         $mail->isHTML(true);                                  
         $mail->Subject = $subject;
         $mail->Body  = $message;
-        $mail->Body  = $pyment;
+        // $mail->Body  = $pyment;
         // $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
     
         $mail->send();   

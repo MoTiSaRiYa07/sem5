@@ -23,8 +23,10 @@ $user = mysqli_fetch_array($run);
 // print_r($user);
 
 $id = $data['id'];
+$name = $user['name'];
 $pname = $product['name'];
 $amt = $data['bid_amount'];
+$img = $product['img_fname'];
 
 // send a pdf
 // HTML content
@@ -33,8 +35,31 @@ $html = "
 <html>
 <head>
     <title>Bid Winning</title>
+    <style>
+
+           table {
+            width : 100%;
+            thead {
+                width :100%;
+            }
+           }
+           table
+           {
+            border: 1px solid rgba(0,0,0,0.6);
+            text-align: center;
+            color: black;
+            border-collapse: collapse;
+           }
+           tr
+           {
+            border: 1px solid rgba(0,0,0,0.6);
+            text-align: center;
+            color: black;
+           }
+            </style>
 </head>
-<body style='color:red'>
+<body>
+      <h1> NAME WIN AUCTION  $name </h1>
 <table>
 <thead>
 								<tr>
@@ -42,21 +67,26 @@ $html = "
 									<th >Name</th>
 									<th >Product</th>
 									<th >Amount</th>
+                                    <th >img</th>
 								</tr>
 							</thead>
                             <tbody>
                                 <tr>
+                                      
                                     <td>$id</td>
+                                    <td>$name</td>
                                     <td>$pname</td>
                                     <td>$amt</td>
+                                    <td>$img</td>
                                 </tr>
                             </tbody>
 </table>    
 
-<form>
-    <input type='text'>
-</form>
+
+
+           
 </body>
+                   
 </html>
 ";
 
