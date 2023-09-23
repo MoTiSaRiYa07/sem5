@@ -27,7 +27,7 @@
             
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href=""></i>FEATURED AUCTION</a>
+                    <a class="nav-link" href="fet.php"></i>FEATURED AUCTION</a>
                 </li>
                 <li class="nav-item ">
                     <a class="nav-link" href=""></i>UPCOMING AUCTION</a>
