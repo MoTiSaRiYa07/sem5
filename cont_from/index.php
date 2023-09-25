@@ -41,7 +41,6 @@ if(isset($_POST['send'])){
   <link rel="stylesheet" type="text/css" href="fo.css"> 
 
     </head>
-<body class="center-absolute">
   <!-- <form class="display-grid row-gap-1-rem" method="post">
     <input class="box-shadow-primary" name="name" type="text" placeholder="Name" autocomplete="off" required />
     <input class="box-shadow-primary" name="email" type="email" placeholder="Email" autocomplete="off" required />
@@ -54,7 +53,7 @@ if(isset($_POST['send'])){
 
   <div class="container">
 
-	<h1 class="brand"><span>CONTAT sdnfmb ME AND MY PROJECT MEMBER </span></h1>
+	<h1 class="brand"><span>CONTAT ME AND MY PROJECT MEMBER </span></h1>
 
 	<div class="wrapper">
 
@@ -72,7 +71,7 @@ if(isset($_POST['send'])){
 
 		<!-- CONTACT FORM -->
 		<div class="contact">
-			<h3>E-mail Us</h3>
+			<h3>contact Us</h3>
 
 			<form id="contact-form"  method="post">
 
@@ -101,11 +100,20 @@ if(isset($_POST['send'])){
 					<textarea name="message" rows="5" id="message"  placeholder="ENTER YOUR MESSAGE" autocomplete="off" require></textarea>
 				</p>
 
-      <p class="full">
+        <p class="full">
         <button type="submit" name="send">
-      Send <i class="fa-solid fa-paper-plane color-white margin-left-1-rem"></i>
+      Send 
     </button>
+
   				</p>
+          <p class="full">
+        <a type="submit" name="" href="../main.php">
+      BACK
+</a>
+  				</p>
+
+
+
 
 			</form>
 			<!-- End #contact-form -->
@@ -118,6 +126,5 @@ if(isset($_POST['send'])){
 <!-- End .container -->
 </body>
 </html>
-<?php include('menu/footer.php'); ?>
 
 
