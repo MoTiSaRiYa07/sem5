@@ -27,13 +27,10 @@ $name = $user['name'];
 $email = $user['email'];
 $pname = $product['name'];
 $amt = $data['bid_amount'];
-// $img = $product['img_fname'];
+ $img = $product['img_fname'];
+ $date = $data['date_created'];
 
-
-
-
-
-// send a pdf
+ // send a pdf
 // HTML content
 $html = "
 <!DOCTYPE html>
@@ -76,6 +73,7 @@ $html = "
                                     <th >Email</th>
 									<th >Product</th>
 									<th >Amount</th>
+                                    <th >Date</th>
 								</tr>
 							</thead>
                             <tbody>
@@ -86,13 +84,16 @@ $html = "
                                     <td>$email</td>
                                     <td>$pname</td>
                                     <td>$amt</td>
-                                </tr>
+                                    <td>$date</td>
+                              </tr>
                             </tbody>
 </table>         
 </body>
                    
 </html>
 ";
+
+  
 
 
 $dompdf->loadHtml($html);

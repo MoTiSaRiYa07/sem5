@@ -32,7 +32,7 @@ if(isset($_POST['send'])){
 }
 ?>
 
-<?php include('../menu/navbar.php'); ?>
+
 
 <html>
 <head>
