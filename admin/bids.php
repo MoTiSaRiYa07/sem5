@@ -75,8 +75,9 @@
 									<td>
 										<button class="btn btn-primary btn-sm view_user" type="button" data-id ='<?php echo $row['user_id'] ?>'>View Buyer Details</button>
 										<?php if($uid == $row['user_id']): ?>
-										<button class="btn btn-success btn-sm view_user" type="button" data-id ='<?php echo $row['user_id'] ?>'>View payment Details</button>
 										<a href="gen_pdf.php?id=<?php echo $row['id'] ?>" class="btn btn-warning btn-sm gen_pdf_btn" data-id ='<?php echo $row['user_id'] ?>'>Genrate pdf</a>
+										<a href="../pdfsent_from/index.php" class="btn btn-info btn-sm gen_pdf_btn" data-id ='<?php echo $row['user_id'] ?>'>SEND PYMENT DETILS</a>
+
 											<?php endif; ?>
 
 									</td>

@@ -52,7 +52,10 @@ $html = "
             text-align: center;
             color: black;
             border-collapse: collapse;
-           }
+            
+                
+        
+        }
            tr
            {
             border: 3px dark srgba(0,0,0,0.6);
@@ -64,6 +67,15 @@ $html = "
 </head>
 <body>
       <h1>  WIN AUCTION DETAILS</h1>
+
+      <div style='text-align:right;'>
+        <b>SENDER:</b> ANKUSHMOTISARIYA && MY TEAM MEMBER
+    </div>
+    <div style='text-align: left;border-top:1px solid #000;'>
+        <div style='font-size: 24px;color: #666;'>RECIVER DETIL</div>
+    </div>
+
+                   
 <table border='1'>
 <thead>
 
@@ -90,7 +102,26 @@ $html = "
 
                            </tr>
                             </tbody>
-</table>         
+</table> 
+
+
+<div style='text-align:right;'>
+ <b>PAYMENT:</b>
+</div>
+<div style='text-align: left;border-top:1px solid #000;'>
+<div style='font-size: 24px;color: #666;'>PAYMENT DETIL</div>
+</div>
+
+<p style='font-size: 24px;color: #666;'><u>Kindly make your payment to</u>:<br/>
+    
+NAME: ANKUSH MOTISARIYA</br>
+Bank: BANK OF BARODA<br/>
+A/C: 05346346543634563423<br/>
+GPAY: 8849048885<br/>
+MAIL: KINGOFEMBROIDARY@GMAIL.COM<br/>
+</p>
+<p><i>Note : ANY PROBBLE TO PYMEND PLESE CONTECT TO MY FROM AND SEND MAIL /i></p>
+
 </body>
       </html>
 

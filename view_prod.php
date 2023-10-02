@@ -20,7 +20,7 @@ $category = $cat_qry->num_rows > 0 ? $cat_qry->fetch_array()['name'] : '' ;
 	<p>Name: <large><b><?php echo $name ?></b></large></p>
 	<p>Category: <b><?php echo $category ?></b></p>
 	<p>Starting Amount: <b><?php echo number_format($start_bid,2) ?></b></p>
-	<p>Until: <b><?php echo date("m d,Y h:i A",strtotime($bid_end_datetime)) ?></b></p>
+	<p>Until: <b><?php echo date("d:m:Y: h:i A",strtotime($bid_end_datetime)) ?></b></p>
 	<p>Highest Bid: <b id="hbid"><?php echo number_format($start_bid,2) ?></b></p>
 	<p>Description:</p>
 	<p class=""><small><i><?php echo $description ?></i></small></p>
