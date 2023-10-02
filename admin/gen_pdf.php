@@ -85,6 +85,7 @@ $html = "
                                     <td>$pname</td>
                                     <td>$amt</td>
                                     <td>$date</td>
+
                               </tr>
                             </tbody>
 </table>         
@@ -107,5 +108,5 @@ $dompdf->render();
 // Output the generated PDF (inline)
 $dompdf->stream();
 ?>
-<img src='<?php echo $img_path ?>' >
+
 

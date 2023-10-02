@@ -42,7 +42,7 @@
                     <li><a href="about.php">Auction detils</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">how to Auction play</a></li>
-                    <li><a href="admin/index.php">ADMIN LOGIN</a></li>
+                    <li><a href="admin/index.php">Admin Login</a></li>
                     
 
                 </ul>
