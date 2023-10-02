@@ -82,7 +82,7 @@ $category = $cat_qry->num_rows > 0 ? $cat_qry->fetch_array()['name'] : '' ;
                         alert_toast("Bid successfully submited",'success')
             			end_load()
                     }else if(resp==2){
-                    	alert_toast("The current highest bid is yours.",'danger')
+                    	alert_toast("SORRY ONLY FOR ONE TIME BID .",'danger')
             			end_load()
                     }
                 }

@@ -37,15 +37,15 @@ if($qry->num_rows > 0){
 					<img src="<?php echo isset($meta['cover_img']) ? 'assets/uploads/'.$meta['cover_img'] :'' ?>" alt="" id="cimg">
 				</div>
 				<center>
-					<button class="btn btn-info btn-primary btn-block col-md-2">Save</button>
+					<button class="btn btn-info btn-primary btn-block col-md-2">SUBMIIT</button>
 				</center>
 			</form>
 		</div>
 	</div>
 	<style>
 	img#cimg{
-		max-height: 10vh;
-		max-width: 6vw;
+		max-height: 10px;
+		max-width: 10px;
 	}
 </style>
 

@@ -74,6 +74,8 @@ $html = "
 									<th >Product</th>
 									<th >Amount</th>
                                     <th >Date</th>
+
+
 								</tr>
 							</thead>
                             <tbody>
@@ -86,12 +88,12 @@ $html = "
                                     <td>$amt</td>
                                     <td>$date</td>
 
-                              </tr>
+                           </tr>
                             </tbody>
 </table>         
 </body>
-                   
-</html>
+      </html>
+
 ";
 
   
