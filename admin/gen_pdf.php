@@ -37,7 +37,6 @@ $html = "
 <html>
 <head>
     <title>Bid Winning</title>
-   
     <style>
 
            table {
@@ -48,7 +47,7 @@ $html = "
            }
            table
            {
-            // border: 1px solid rgba(0,0,0,0.6);
+             border: 2px solid rgba(0,0,0,0.6);
             text-align: center;
             color: black;
             border-collapse: collapse;
@@ -62,16 +61,17 @@ $html = "
             text-align: center;
             color: black;
            }
-            </style>
+
+  </style>
          
 </head>
 <body>
-      <h1>  WIN AUCTION DETAILS</h1>
+      <h1 style='font-size: 24px;color: red;'>  WIN AUCTION DETAILS</h1>
 
       <div style='text-align:right;'>
         <b>SENDER:</b> ANKUSHMOTISARIYA && MY TEAM MEMBER
     </div>
-    <div style='text-align: left;border-top:1px solid #000;'>
+    <div style='text-align: left;border-top:3px solid #000;'>
         <div style='font-size: 24px;color: #666;'>RECIVER DETIL</div>
     </div>
 
@@ -108,19 +108,66 @@ $html = "
 <div style='text-align:right;'>
  <b>PAYMENT:</b>
 </div>
-<div style='text-align: left;border-top:1px solid #000;'>
-<div style='font-size: 24px;color: #666;'>PAYMENT DETIL</div>
+<div style='text-align: left;border-top:3px solid #000;'>
+<div style='font-size: 24px;color:  #273746; text-align :center;'>PAYMENT DETIL</div>
 </div>
-
-<p style='font-size: 24px;color: #666;'><u>Kindly make your payment to</u>:<br/>
-    
+<p><h style='font-size: 24px;color: #666;'> MAKE YOUR PAYMENT TO </h><br/>
 NAME: ANKUSH MOTISARIYA</br>
-Bank: BANK OF BARODA<br/>
+BANK: BANK OF BARODA<br/>
 A/C: 05346346543634563423<br/>
 GPAY: 8849048885<br/>
 MAIL: KINGOFEMBROIDARY@GMAIL.COM<br/>
 </p>
-<p><i>Note : ANY PROBBLE TO PYMEND PLESE CONTECT TO MY FROM AND SEND MAIL /i></p>
+
+<div style='text-align: left;border-top:3px solid #000;'>
+<div style='font-size: 24px;color: #666;'></div>
+</div>
+
+<p style='margin: 10px; pedding: 10px;'>
+
+<h style='font-size: 24px;color: #666;'>PROJECT MEMBER DETILS </h><br/>
+    
+NAME: MANSI KAKADIYA</br>
+BANK: BANK OF INDIA<br/>
+A/C: 056756897854<br/>
+GPAY: 9054265057<br/>
+MAIL: KAKADIYAMANSI84@GMAIL.COM<br/>
+</p>
+
+<div style='text-align: left;border-top:3px solid #000;'>
+<div style='font-size: 24px;color: #666;'></div>
+</div>
+
+<p style='margin: 10px; pedding: 10px;'>
+
+<h style='font-size: 24px;color: #666;'>PROJECT MEMBER DETILS </h><br/>
+    
+NAME: TAXIL LAKHANI</br>
+BANK: HDFC BANK<br/>
+A/C:  8456457891<br/>
+GPAY:  9924139884<br/>
+MAIL: TAXIL.LAKHANI3143@GMAIL.COM<br/>
+</p>
+<p style='font-size: 15px;color: #666;'><i>Note : ANY PROBLEAM TO PAYMENT PLEASE CONTACT TO MY FROM AND SEND MAIL</p>
+
+
+<h1>Shipping</h1>
+  <p style='font-size: 24px;color: red; text-align :center;'>..PICK UP YOUR WIN PAINTING FROM HERE..</p>
+  <hr />
+  <div style='font-size: 24px;color:  #273746; text-align :center;'>ADDRESS DETIL</div>
+    
+ADDRESS:45 ASHIRWAD RESIDENCY SURAT </br>
+COUNTRY: INDIA<br/>
+STATE : GUJRAT<br/>
+CITY: SURAT<br/>
+ZIP CODE: 341318<br/>
+LANDMARK : CANAL ROAD<br/>
+</p>
+<div style='text-align: left;border-top:3px solid #000;'>
+<div style='font-size: 24px;color: #666;'></div>
+</div>
+<p style='font-size: 15px;color: #666;'><i>Note : ANY PROBLEAM TO ADDRESS PLEASE CONTACT TO ME AND MY PROJECT MEMBER</p>
+      <h1 style='color: red; text-align :center;'> ....THANK YOU FOR SELLING.... </h1>
 
 </body>
       </html>
