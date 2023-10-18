@@ -25,17 +25,16 @@
                 <li class="nav-item ">
                     <a class="nav-link" href="../index.php"></i>LATEST AUCTIONS</a>
             
+                    <li class="nav-item ">
+                    <a class="nav-link" href="../fet.php"></i>UPCOMING AUCTION</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href=""></i>FEATURED AUCTION</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link" href=""></i>UPCOMING AUCTION</a>
+                    <a class="nav-link" href="../ppp.php"></i>FEATURED AUCTION</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href=""></i>CLOSED AUCTION</a>
+                    <a class="nav-link" href="../col.php"></i>CLOSED AUCTION</a>
                 </li>
-               <!-- <li class="nav-item">
+                <!-- <li class="nav-item">
                     <a class="nav-link" href="regstionc.php"></i>REGISTER</a>
                 </li>
                 <li class="nav-item ">

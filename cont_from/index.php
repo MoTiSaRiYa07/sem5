@@ -62,9 +62,25 @@ if(isset($_POST['send'])){
 			<h3>PAINTING AUCTION SYSTEM</h3>
 
 			<ul>
-				<li><i class="fa fa-road"></i>created by ankushmotisariya & my project member</li>
-				<li><i class="fa fa-phone"></i>8849048885</li>
-				<li><i class="fa fa-envelope"></i>kingofembroidery@gmail.com</li>
+				<li><i class="fa fa-road"></i>CREATE BY ANKUSH MOTISARIYA AND MY PROJECT MEMBER</li><br>
+
+        <li><i class="fa fa-road"></i> ANKUSH MOTISARIYA</li>
+        <li><i class="fa fa-phone"></i>8849048885</li>
+				<li><i class="fa fa-envelope"></i>KINGOFEMBROIDERY@GMAIL.COM</li><br>
+
+        <li><i class="fa fa-road"></i>MANSI KAKADIYA</li>
+        <li><i class="fa fa-phone"></i>9054265057</li>
+				<li><i class="fa fa-envelope"></i>MANSIKAKADIYA84@GMAIL.COM</li><br>
+
+        <li><i class="fa fa-road"></i>TAXIL LAKHANI</li>
+        <li><i class="fa fa-phone"></i>9924139884</li>
+				<li><i class="fa fa-envelope"></i>TAXILLAKHANI3143@GMAIL.COM</li><br>
+
+
+  
+        
+
+        
 			</ul>
 		</div>
 		<!-- End .company-info -->

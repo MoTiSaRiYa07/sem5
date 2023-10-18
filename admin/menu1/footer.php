@@ -38,7 +38,7 @@
 
             <div class="row" style="font-family: 'Marck Script', cursive;">
                 <ul>
-                    <li><a href="conts.php">Contact us</a></li>
+                    <li><a href="../cont_from">Contact us</a></li>
                     <li><a href="about.php">Auction detils</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">how to Auction play</a></li>

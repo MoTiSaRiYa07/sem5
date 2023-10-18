@@ -176,7 +176,7 @@
       <div class="col-lg-3 col-md-6 mb-4 mb-lg-0">
         <div class="card rounded shadow-sm border-0">
           <div class="card-body p-4">
-            <img src="https://cdn-ajggd.nitrocdn.com/kMoOFpDlsOVtlYJLrnSRNCQXaUFHZPTY/assets/images/optimized/rev-29e376d/shotkit.com/wp-content/uploads/bb-plugin/cache/photo-to-painting-landscape-077aa2b5666e99883b9e549b6537be4d-zybravgx2q47.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
+            <img src="img/c2.jpg" alt="" class="img-fluid d-block mx-auto mb-3">
             <h5>
               <p class="h11">TURN PHOTOS INTO PAINTING</p>
               <a href="#" class="text-dark"></a>
