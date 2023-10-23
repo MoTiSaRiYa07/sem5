@@ -50,6 +50,7 @@ if(isset($_POST['send'])){
       Send <i class="fa-solid fa-paper-plane color-white margin-left-1-rem"></i>
     </button>
   </form> -->
+  <p><a href="../main.php"><img src="../img/arr.png" style="width:50px;height:50px;"></a></p>
 
   <div class="container">
 
