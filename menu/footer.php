@@ -40,8 +40,8 @@
                 <ul>
                     <li><a href="cont_from">Contact us</a></li>
                     <li><a href="info.php">Member Detils</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">How to Auction Play</a></li>
+                    <li><a href="pv.php">Privacy Policy</a></li>
+                    <li><a href="aup.php">How to Auction Play</a></li>
                     <li><a href="admin/index.php">Admin Login</a></li>
                     
 
