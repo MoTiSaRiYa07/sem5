@@ -39,7 +39,7 @@
             <div class="row" style="font-family: 'Marck Script', cursive;">
                 <ul>
                     <li><a href="cont_from">Contact us</a></li>
-                    <li><a href="about.php">Auction detils</a></li>
+                    <li><a href="info.php">Member Detils</a></li>
                     <li><a href="#">Privacy Policy</a></li>
                     <li><a href="#">How to Auction Play</a></li>
                     <li><a href="admin/index.php">Admin Login</a></li>
