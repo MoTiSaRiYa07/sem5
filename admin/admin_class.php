@@ -1,6 +1,8 @@
 <?php
 session_start();
+//To store all the details of painting we have created auction class 
 ini_set('display_errors', 1);
+
 Class Action {
 	private $db;
 
@@ -15,6 +17,7 @@ Class Action {
 	    ob_end_flush();
 	}
 
+	//bidder login
 	function login(){
 		
 			extract($_POST);		
@@ -36,7 +39,7 @@ Class Action {
 				return 3;
 			}
 	}
-
+	//Seller login
 	function slogin(){
 		
 		extract($_POST);		
@@ -57,7 +60,7 @@ Class Action {
 			return 3;
 		}
 }
-
+	//Admin login
 	function login2(){
 		
 			extract($_POST);		
@@ -79,6 +82,7 @@ Class Action {
 				return 3;
 			}
 	}
+	//customer logout
 	function logout(){
 		session_destroy();
 		foreach ($_SESSION as $key => $value) {
@@ -86,6 +90,7 @@ Class Action {
 		}
 		header("location:login.php");
 	}
+	//Seller logout
 	function slogout(){
 		session_destroy();
 		foreach ($_SESSION as $key => $value) {
@@ -93,6 +98,7 @@ Class Action {
 		}
 		header("location:login1.php");
 	}
+	//Admin logout
 	function logout2(){
 		session_destroy();
 		foreach ($_SESSION as $key => $value) {
@@ -100,7 +106,7 @@ Class Action {
 		}
 		header("location:../index.php");
 	}
-
+	//It will save the all details of user 
 	function save_user(){
 		extract($_POST);
 		$data = " name = '$name' ";
@@ -124,12 +130,14 @@ Class Action {
 			return 1;
 		}
 	}
+	//It will delete the user of from database
 	function delete_user(){
 		extract($_POST);
 		$delete = $this->db->query("DELETE FROM users where id = ".$id);
 		if($delete)
 			return 1;
 	}
+	//Registration of seller / Bidder
 	function signup(){
 		extract($_POST);
 		$chk=$this->db->query("SELECT * FROM otps where email = '$email' ")->num_rows;
@@ -173,7 +181,7 @@ Class Action {
 				return $login;
 		}
 	}  
-	
+//It will provide the other details of user when we are doing update	
 function update_account(){
 		extract($_POST);
 		$data = " name = '".$firstname.' '.$lastname."' ";
@@ -213,7 +221,7 @@ function update_account(){
 			}
 		}
 	}
-
+//it will provide the details of system setting
 	function save_settings(){
 		extract($_POST);
 		$data = " name = '".str_replace("'","&#x2019;",$name)."' ";
@@ -245,7 +253,7 @@ function update_account(){
 				}
 	}
 
-	
+	//It will insert update delete and save the details
 	function save_category(){
 		extract($_POST);
 		$data = " name = '$name' ";

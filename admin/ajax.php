@@ -1,27 +1,29 @@
 <?php
+// it will fetch the all details about ajax file and admin class
 ob_start();
 $action = $_GET['action'];
 include 'admin_class.php';
 $crud = new Action();
+//ajax for customer login 
 if($action == 'login'){
 	$login = $crud->login();
 	if($login)
 		echo $login;
 }
-
+//ajax for seller login 
 if($action == 'slogin'){
 	$login = $crud->slogin();
 	if($login)
 		echo $login;
 }
 
-
-
+//ajax for admin login 
 if($action == 'login2'){
 	$login = $crud->login2();
 	if($login)
 		echo $login;
 }
+//All user logout details
 if($action == 'logout'){
 	$logout = $crud->logout();
 	if($logout)
@@ -37,6 +39,7 @@ if($action == 'logout2'){
 	if($logout)
 		echo $logout;
 }
+//it will save the details of user that they are admin customer or seller using ajax
 if($action == 'save_user'){
 	$save = $crud->save_user();
 	if($save)
@@ -47,6 +50,7 @@ if($action == 'delete_user'){
 	if($save)
 		echo $save;
 }
+//registration of  admin customer or seller using ajax
 if($action == 'signup'){
 	$save = $crud->signup();
 	if($save)
@@ -57,6 +61,7 @@ if($action == 'update_account'){
 	if($save)
 		echo $save;
 }
+//system seeting information
 if($action == "save_settings"){
 	$save = $crud->save_settings();
 	if($save)

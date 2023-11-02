@@ -15,10 +15,7 @@
 		<button class="button btn btn-primary btn-sm">Login</button>
 		<button class="button btn btn-secondary btn-sm" type="button" data-dismiss="modal">Cancel</button>
 	</form>
-
-
 </div>
-
 <style>
 	#uni_modal .modal-footer{
 		display:none;
