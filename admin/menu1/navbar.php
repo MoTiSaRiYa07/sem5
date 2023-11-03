@@ -29,7 +29,7 @@
                     <a class="nav-link" href="../fet.php"></i>UPCOMING AUCTION</a>
                 </li>
                 <li class="nav-item ">
-                    <a class="nav-link" href="../ppp.php"></i>FEATURED AUCTION</a>
+                    <a class="nav-link" href="../ppp.php"></i>FUTURE AUCTION</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="../col.php"></i>CLOSED AUCTION</a>
