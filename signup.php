@@ -27,7 +27,7 @@
 		</div>
 		<div class="form-group">
 			<label for="" class="control-label">City</label>
-			<input type="city" name="city" placeholder="Enter city only surat" required="" class="form-control">
+			<input type="city" name="city" placeholder="Enter city only surat" required="" class="form-control" onclick="validateCity()">
 
 			<div class="form-group">
 				<label for="" class="control-label">Email</label>
@@ -93,17 +93,42 @@
 				console.log("Response is ",resp);
 				if (resp == 1) {
 					location.reload();
-				} else if(resp ==11){
+
+				} 
+				else if( resp ==2)
+					{
+						$('#signup-frm').prepend('<div class="alert alert-danger">USER NAME ARE AVAIABLE PLEASE MAKE ARE NEW USER NAME :: </div>')
+					end_load();
+
+					}
+					else if( resp ==3)
+					{
+						$('#signup-frm').prepend('<div class="alert alert-danger"> NAME ARE AVAIABLE PLEASE MAKE ARE NEW NAME :: </div>')
+					end_load();
+
+					}
+
+					else if( resp ==4)
+					{
+						$('#signup-frm').prepend('<div class="alert alert-danger">CONTENT NUMBER  ARE AVAIABLE PLEASE MAKE ARE NEW CONTANT NUMBER :: </div>')
+					end_load();
+
+					}
+
+
+					else if(resp ==11){
 
 					$('#signup-frm').prepend('<div class="alert alert-danger">Invalid OTP</div>')
 					end_load();
 				}
 				else if(resp ==12){
 					$('#signup-frm').prepend('<div class="alert alert-danger">Invalid Request</div>')
+					end_load();
+
 				}
 				
 				else {
-					$('#signup-frm').prepend('<div class="alert alert-danger">Email already exist.</div>')
+					$('#signup-frm').prepend('<div class="alert alert-danger">' + resp + '</div>')
 					end_load()
 				}
 			}
@@ -139,3 +164,19 @@
 		});
 	});
 </script>
+
+<!-- <script>
+        function validateCity() {
+            // Get the value of the city input
+            var city = $('#city').val();
+
+            // Check if the city is "Surat" (case-insensitive)
+            if (city.trim().toLowerCase() === "surat") {
+                $('#cityError').text(""); // Clear error message
+                alert("only  city is Surat.");
+            } else {
+                $('#cityError').text("Please enter Surat."); // Display error message
+            }
+        }
+    </script> -->
+

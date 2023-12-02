@@ -47,7 +47,7 @@
 
                 </ul>
             </div>
-            <p class="rights-text" style="font-family: 'Great Vibes', cursive;"> created by ankushmotisariya & my project member</p>
+            <p class="rights-text" style="font-family: 'Great Vibes', cursive;">Thank You for Visiting..!!!!</p>
     </footer>
 </body>
 

@@ -3,12 +3,13 @@
 	
 	<form action="" id="login-frm">
 		<div class="form-group">
-			<label for="" class="control-label">Username</label>
-			<input type="text" name="username" required="" class="form-control">
+			<label for="" class="control-label">Email Id:</label>
+			<input type="email" name="email"  placeholder="Enter email fromate:: yourname@gmail.com::" required=""   pattern="[_a-z0-9-+]+(\.[_a-z0-9-+]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})" class="form-control" id="email">
+
 		</div>
 		<div class="form-group">
 			<label for="" class="control-label">Password</label>
-			<input type="password" name="password" required="" class="form-control">
+			<input type="password" name="password" required=""  placeholder="Enter your Password::" class="form-control">
 			<small><a href="javascript:void(0)" id="new_account">Create New Account</a></small>
 
 		</div>
@@ -53,3 +54,4 @@
 		})
 	})
 </script>
+

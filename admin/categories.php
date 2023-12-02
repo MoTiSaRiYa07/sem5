@@ -22,7 +22,7 @@
 					<div class="card-footer">
 						<div class="row">
 							<div class="col-md-12">
-								<button class="btn btn-sm btn-primary col-sm-3 offset-md-3"> Save</button>
+								<button class="btn btn-sm btn-primary col-sm-3 offset-md-3" onclick="validateName()"> Save</button>
 								<button class="btn btn-sm btn-default col-sm-3" type="button" onclick="$('#manage-category').get(0).reset()"> Cancel</button>
 							</div>
 						</div>
@@ -80,6 +80,8 @@
 		vertical-align: middle !important;
 	}
 </style>
+
+
 <script>
 	
 	$('#manage-category').submit(function(e){
@@ -94,6 +96,7 @@
 		    method: 'POST',
 		    type: 'POST',
 			success:function(resp){
+				console.log(resp);
 				if(resp==1){
 					alert_toast("Data successfully added",'success')
 					setTimeout(function(){
@@ -107,10 +110,19 @@
 						location.reload()
 					},1500)
 
+				}else
+				{
+					alert_toast("" + resp +"" , 'success'); 
+
+					setTimeout(function(){
+						location.reload()
+					},1500)
 				}
 			}
 		})
 	})
+
+	
 	$('.edit_category').click(function(){
 		start_load()
 		var cat = $('#manage-category')
@@ -142,3 +154,4 @@
 	}
 	$('table').dataTable()
 </script>
+

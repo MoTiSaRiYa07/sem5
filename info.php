@@ -76,7 +76,7 @@ nav {
 <div class="container">
 <div id="ed"><h3>=CONTACT US=</h3></div>
 	 <table cellspacing="20" id="contact" align="center">
-	<caption><h3>DEVELOPERS</h3></caption>
+	<caption><h3>MEMBER DETAILS</h3></caption>
 	<tr>
 		<td>
 			<img src="img/ankush.jpg" class="circ" >

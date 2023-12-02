@@ -52,9 +52,40 @@ if($action == 'delete_user'){
 }
 //registration of  admin customer or seller using ajax
 if($action == 'signup'){
-	$save = $crud->signup();
-	if($save)
-		echo $save;
+
+	if ($action == 'signup') {
+		$signupResult = $crud->signup();
+	
+		if ($signupResult === 1) {
+			// Success
+			echo 1;
+		} elseif ($signupResult === 2) {
+			// Username already exists
+			echo 2;
+		} elseif ($signupResult === 3) {
+			// First name already exists
+			echo 3;
+
+		} elseif ($signupResult === 4) {
+			// contat  number aleady exists
+			echo 4;
+		} elseif ($signupResult === 11) {
+			// Invalid OTP
+			echo 11;
+		} elseif ($signupResult === 12) {
+			// OTP not found
+			echo 12;
+		} else {
+			// Other error
+			echo "Error: " . $signupResult;
+		}
+	}
+	
+
+	// $save = $crud->signup();
+
+	// if($save)
+	// 	echo $save;
 }
 if($action == 'update_account'){
 	$save = $crud->update_account();
@@ -69,8 +100,23 @@ if($action == "save_settings"){
 }
 if($action == "save_category"){
 	$save = $crud->save_category();
-	if($save)
-		echo $save;
+	// if($save)
+	// 	echo $save;
+
+	// Code added by Vatsal ********************
+		if ($save === 1) {
+			// Success
+			echo "Category saved successfully.";
+		} 
+		else if($save===3)
+		{
+			echo "Error: Category should not be empty";
+		}
+		else {
+			// Error
+			echo "Error: Category already avaiable";
+		}
+	// Code added by Vatsal ********************
 }
 
 if($action == "delete_category"){

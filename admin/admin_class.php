@@ -20,9 +20,9 @@ Class Action {
 	//bidder login
 	function login(){
 		
-			extract($_POST);		
+			extract($_POST);	
 			$qry = $this->db->query("SELECT * FROM users where username = '".$username."' and password = '".md5($password)."' ");
-			if($qry->num_rows > 0){
+	                 if($qry->num_rows > 0){
 				foreach ($qry->fetch_array() as $key => $value) {
 					if($key != 'passwors' && !is_numeric($key))
 						$_SESSION['login_'.$key] = $value;
@@ -64,7 +64,7 @@ Class Action {
 	function login2(){
 		
 			extract($_POST);		
-			$qry = $this->db->query("SELECT * FROM users where username = '".$username."' and password = '".md5($password)."' ");
+			$qry = $this->db->query("SELECT * FROM users where email = '".$email."' and password = '".md5($password)."' ");
 			if($qry->num_rows > 0){
 				foreach ($qry->fetch_array() as $key => $value) {
 					if($key != 'passwors' && !is_numeric($key))
@@ -142,7 +142,22 @@ Class Action {
 		extract($_POST);
 		$chk=$this->db->query("SELECT * FROM otps where email = '$email' ")->num_rows;
 		
-		
+		// Check if the username already exists in the users table
+		$chkUsername = $this->db->query("SELECT * FROM users WHERE username = '$username'")->num_rows;
+
+		if ($chkUsername > 0) {
+			// Username already exists
+			return 2;
+		}
+	
+		// Check if the first name already exists in the users table
+		$chkFirstName = $this->db->query("SELECT * FROM users WHERE name = '$name'")->num_rows;
+	
+		if ($chkFirstName > 0) {
+			// First name already exists
+			return 3; // You can use a different error code if needed
+		}
+
 		if($chk >0)
 		{
 			if($emailotp!=$_SESSION['otp'])
@@ -257,6 +272,25 @@ function update_account(){
 	function save_category(){
 		extract($_POST);
 		$data = " name = '$name' ";
+		
+		// Code added by Vatsal ********************
+		if (empty($name)) {
+			return 3;
+		}
+
+		 // Sanitize user input
+		 $name = mysqli_real_escape_string($this->db, $name);
+
+		 // Check if the category with the given name already exists
+		 $check_query = $this->db->query("SELECT * FROM categories WHERE name = '$name'");
+	 
+		 if ($check_query->num_rows > 0) {
+			 // Category with the same name already exists
+			 return "Category with the name '$name' already exists.";
+		 }
+
+		 // Code added by Vatsal ********************
+		 
 			if(empty($id)){
 				$save = $this->db->query("INSERT INTO categories set $data");
 			}else{
