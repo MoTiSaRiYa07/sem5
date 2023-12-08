@@ -37,12 +37,11 @@
                 </li>
                 
                 <li class="nav-item">
-                    <a class="nav-link" href="admin/index1.php"></i>SELLER LOGIN</a>
+                    <a class="nav-link" href="index.php"></i>LOGIN NOW</a>
                 </li>
                 <!--li class="nav-item ">
-                    <a class="nav-link" href="loginc.php" ></i>LOGIN</a>
-                </li>
--->
+                    <!-- <a class="nav-link" href="loginc.php" ></i>LOGIN</a>
+                </li> -->
             </ul>
         </div>
     </nav>

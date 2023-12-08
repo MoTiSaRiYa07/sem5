@@ -135,4 +135,6 @@
 			}
 		})
 	}
+	$('table').dataTable()
+
 </script>

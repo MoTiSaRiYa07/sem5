@@ -69,6 +69,16 @@ if($action == 'signup'){
 		} elseif ($signupResult === 4) {
 			// contat  number aleady exists
 			echo 4;
+
+		} elseif ($signupResult === 5) {
+			// email  number aleady exists
+			echo 5;
+
+		} elseif ($signupResult === 6) {
+			// city are surat
+			echo 6;
+
+
 		} elseif ($signupResult === 11) {
 			// Invalid OTP
 			echo 11;

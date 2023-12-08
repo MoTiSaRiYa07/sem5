@@ -15,7 +15,7 @@
 	<form action="" id="signup-frm">
 		<div class="form-group">
 			<label for="" class="control-label">Name</label>
-			<input type="text" name="name"  required="" placeholder="Enter name " class="form-control">
+			<input type="text" name="name"  required="" placeholder="Enter name " class="form-control" pattern="'/^[a-zA-Z\'\- ]+$/">
 		</div>
 		<div class="form-group">
 			<label for="" class="control-label">Contact</label>
@@ -27,7 +27,7 @@
 		</div>
 		<div class="form-group">
 			<label for="" class="control-label">City</label>
-			<input type="city" name="city" placeholder="Enter city only surat" required="" class="form-control" onclick="validateCity()">
+			<input type="city" name="city" placeholder="Enter city only surat" required="" class="form-control">
 
 			<div class="form-group">
 				<label for="" class="control-label">Email</label>
@@ -53,11 +53,12 @@
 			
 			<div class="form-group">
 				<label for="" class="control-label">Username</label>
-				<input type="text" name="username" placeholder="Enter user name" required="" class="form-control">
+				<input type="text" name="username" placeholder="Enter user name" required=""  pattern="'/^[a-zA-Z\'\- ]+$/" class="form-control">
 			</div>
 			<div class="form-group">
 				<label for="" class="control-label">Password</label>
-				<input type="password" name="password"  placeholder="Enter password" required="" class="form-control">
+				<input type="password" name="password"  placeholder="Enter password" required="" class="form-control" >
+				<!-- pattern="$pattern = '/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/';" -->
 			</div>
 
 			<button class="button btn btn-primary btn-sm">Create</button>
@@ -93,7 +94,6 @@
 				console.log("Response is ",resp);
 				if (resp == 1) {
 					location.reload();
-
 				} 
 				else if( resp ==2)
 					{
@@ -111,9 +111,30 @@
 					else if( resp ==4)
 					{
 						$('#signup-frm').prepend('<div class="alert alert-danger">CONTENT NUMBER  ARE AVAIABLE PLEASE MAKE ARE NEW CONTANT NUMBER :: </div>')
+
 					end_load();
 
 					}
+
+					else if( resp ==5)
+					{
+						$('#signup-frm').prepend('<div class="alert alert-danger">EMAIL ARE AVAIABLE PLEASE MAKE ARE NEW EMAIL ID :: </div>')
+						$('.mail-otp-send').show();
+						$('.mail-sent-msg').hide();
+						$('.mail-otp-send').attr('disabled' , false)
+						$("input[name = 'emailotp']").val('');
+
+					end_load();
+				}
+
+				else if( resp ==6)
+					{
+						$('#signup-frm').prepend('<div class="alert alert-danger">CITY ONLY SURAT PLEASE MAKE ARE CITY SURAT :: </div>')
+
+					end_load();
+
+					}
+
 
 
 					else if(resp ==11){

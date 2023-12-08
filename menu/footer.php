@@ -42,7 +42,7 @@
                     <li><a href="info.php">Member Detils</a></li>
                     <li><a href="pv.php">Privacy Policy</a></li>
                     <li><a href="aup.php">How to Auction Play</a></li>
-                    <li><a href="admin/index.php">Admin Login</a></li>
+                    <!-- <li><a href="admin/index.php">Admin Login</a></li> -->
                     
 
                 </ul>
