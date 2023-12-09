@@ -196,13 +196,7 @@ class Action
 			return 5; // You can use a different error code if needed
 		}
 
-		$chkcity = $this->db->query("SELECT * FROM users WHERE city = '$city'")->num_rows;
-                //city only for surat
-		if ($chkcity > 0) {
-			// email already exists
-			return 5; // You can use a different error code if needed
-		}
-
+			
 		
 
           if ($chk > 0) {

@@ -135,6 +135,6 @@
 			}
 		})
 	}
-	$('table').dataTable()
+
 
 </script>
